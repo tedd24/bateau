@@ -1,0 +1,160 @@
+body{
+    background-color: #6C829d;
+    margin-top: 60px;
+}
+
+* {
+    overflow: auto;  /* pour eviter la deformation de l'image en agrandissant le nombrte
+    de données pour cette colone ...
+    par contre si on souhaite generaliser le cas, il faudre un:
+     OVERFLOW : AUTO    voir en bas de lka fenetre */
+}
+p.paradisiaque{
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: inline-block; 
+    /*margin-left:center;*/
+    margin-top: -60px;
+    padding: 8px 18px;
+    font-weight: bold;  /*  pour le Gras  */
+    font-size: 16px;
+}
+div.paradisiaque{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: visible;
+}    
+p.description{
+    text-align: center;
+    margin: auto;
+    max-width: 250px;
+    font-size: 16px;
+}
+.image{
+    text-align: center;
+    width: 100%;
+    display: block;
+    max-height: 400px;
+    object-fit: cover;   /* pour eviter la deformation de l'image en agrandissant la fenetre */
+    min-height: 200px;  /* meme si on a pas d'image, il restera toujours un espacement pour */
+}
+div.contenu{
+    overflow: visible;
+    /*  min-width: 400px;  */
+    background-color: white;
+    margin: 60px 0% 0px 8%;
+    padding: 0px 30px 30px 3Opx;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);       /*  CECI EST L'EFAIT D'OMBRE  */
+       /* OFFSET-X  OFFSET-Y    BLUR-RADIUS        SPREAD-RADIUS        COLOR
+          decalage X et Y     cantité de floue     ombre 4 cotés       Couleur 
+               pour ajoputer un effet d'ombre sur les bordures de la page */
+
+}
+div.contenu h1{
+text-align: center;
+margin-top: 40px;
+}
+div.contenu span{
+    color: red;
+}
+div.info{
+    position: relative;
+}
+table.info{
+    position: absolute;
+        bottom: 0;
+        width: 100%;  /* pour occuper toute la largeur */
+        height: 60px;
+        color: black;
+        background-color: #e2e8b9c0; 
+        text-align: center; 
+        /* padding: auto; */ 
+}
+table.info th{
+    vertical-align: bottom; /* pour aligner le texte vers le bas */
+}
+table.info td{
+    vertical-align: top; /* pour aligner le texte vers le haut */
+}
+
+div.colonne{
+    width: 45%;
+    margin-top: 20px;
+}
+div.colonne1{
+    display: inline-block;
+    margin-right:10px ;
+    
+}
+div.colonne2{
+    float: right;  /* pour mettre des colonnes en parallèle */
+}
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px; 
+    border-bottom: 4px  solid #6C829d;    /* pour la ligne de separation */
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px; 
+  
+}
+div.ing p{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    padding: 8px 0px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    
+}
+
+
+table.colonneTD tr{
+    height: 40px;   /* ceci est pour eviter que les ronds se decalent en reduisant la fenetre */
+}
+table.colonneTD {
+    font-size: 14px;
+    /*    min-width: 20px;    */
+    
+}
+table.colonneTD td{
+    padding-left: 10px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+table.colonneTD p.numero{
+    background-color: #6C829d;
+    color: white;
+    width: 25px;
+    height: 25px;
+    vertical-align: center;
+    font-size: 14px;
+    font-weight:  bold;
+    padding-top: 5px;
+    box-sizing: border-box;   /*calcule la taille en gardant la taille du padding */
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+table.colonneTD td{
+    vertical-align: top;
+    
+}
+table.colonneTD td.prepa{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+@media only screen and (min-width: 768PX) {
+    div.contenu{
+            margin: 0px 10% 80px 10%;
+            padding: 5% 5% 5% 5%;
+            min-width: 340px;
+    }
+   
+}
